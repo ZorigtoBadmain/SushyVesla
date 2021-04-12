@@ -13,6 +13,15 @@
 		35234A67262444810008C4F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35234A65262444810008C4F8 /* Main.storyboard */; };
 		35234A69262444850008C4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35234A68262444850008C4F8 /* Assets.xcassets */; };
 		35234A6C262444850008C4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35234A6A262444850008C4F8 /* LaunchScreen.storyboard */; };
+		35234A7A2624550B0008C4F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35234A792624550B0008C4F8 /* HomeViewController.swift */; };
+		35234A80262455EA0008C4F8 /* BalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35234A7E262455EA0008C4F8 /* BalanceCell.swift */; };
+		35234A81262455EA0008C4F8 /* BalanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35234A7F262455EA0008C4F8 /* BalanceCell.xib */; };
+		35234A85262459080008C4F8 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35234A83262459080008C4F8 /* FriendsCell.swift */; };
+		35234A86262459080008C4F8 /* FriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35234A84262459080008C4F8 /* FriendsCell.xib */; };
+		35234A8B26245AAD0008C4F8 /* CompositionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35234A8A26245AAD0008C4F8 /* CompositionLayout.swift */; };
+		35234A91262463900008C4F8 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35234A90262463900008C4F8 /* HeaderCollectionReusableView.swift */; };
+		35234A96262472AD0008C4F8 /* ServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35234A94262472AD0008C4F8 /* ServicesCell.swift */; };
+		35234A97262472AD0008C4F8 /* ServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35234A95262472AD0008C4F8 /* ServicesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		35234A68262444850008C4F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35234A6B262444850008C4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35234A6D262444850008C4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35234A792624550B0008C4F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		35234A7E262455EA0008C4F8 /* BalanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCell.swift; sourceTree = "<group>"; };
+		35234A7F262455EA0008C4F8 /* BalanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceCell.xib; sourceTree = "<group>"; };
+		35234A83262459080008C4F8 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
+		35234A84262459080008C4F8 /* FriendsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsCell.xib; sourceTree = "<group>"; };
+		35234A8A26245AAD0008C4F8 /* CompositionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionLayout.swift; sourceTree = "<group>"; };
+		35234A90262463900008C4F8 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		35234A94262472AD0008C4F8 /* ServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCell.swift; sourceTree = "<group>"; };
+		35234A95262472AD0008C4F8 /* ServicesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				35234A5E262444810008C4F8 /* SushyVeslaTZ */,
+				35234A65262444810008C4F8 /* Main.storyboard */,
 				35234A5D262444810008C4F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +75,71 @@
 		35234A5E262444810008C4F8 /* SushyVeslaTZ */ = {
 			isa = PBXGroup;
 			children = (
+				35234A8926245A8B0008C4F8 /* CompositionLayout */,
+				35234A77262445960008C4F8 /* Supporting files */,
+				35234A762624457A0008C4F8 /* ViewModel */,
+				35234A75262445720008C4F8 /* View */,
+				35234A742624456B0008C4F8 /* Model */,
+			);
+			path = SushyVeslaTZ;
+			sourceTree = "<group>";
+		};
+		35234A742624456B0008C4F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35234A75262445720008C4F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35234A7C262455B30008C4F8 /* Cells */,
+				35234A63262444810008C4F8 /* ViewController.swift */,
+				35234A792624550B0008C4F8 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35234A762624457A0008C4F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35234A77262445960008C4F8 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				35234A5F262444810008C4F8 /* AppDelegate.swift */,
 				35234A61262444810008C4F8 /* SceneDelegate.swift */,
-				35234A63262444810008C4F8 /* ViewController.swift */,
-				35234A65262444810008C4F8 /* Main.storyboard */,
 				35234A68262444850008C4F8 /* Assets.xcassets */,
 				35234A6A262444850008C4F8 /* LaunchScreen.storyboard */,
 				35234A6D262444850008C4F8 /* Info.plist */,
 			);
-			path = SushyVeslaTZ;
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		35234A7C262455B30008C4F8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				35234A7E262455EA0008C4F8 /* BalanceCell.swift */,
+				35234A7F262455EA0008C4F8 /* BalanceCell.xib */,
+				35234A83262459080008C4F8 /* FriendsCell.swift */,
+				35234A84262459080008C4F8 /* FriendsCell.xib */,
+				35234A90262463900008C4F8 /* HeaderCollectionReusableView.swift */,
+				35234A94262472AD0008C4F8 /* ServicesCell.swift */,
+				35234A95262472AD0008C4F8 /* ServicesCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		35234A8926245A8B0008C4F8 /* CompositionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				35234A8A26245AAD0008C4F8 /* CompositionLayout.swift */,
+			);
+			path = CompositionLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +201,10 @@
 			files = (
 				35234A6C262444850008C4F8 /* LaunchScreen.storyboard in Resources */,
 				35234A69262444850008C4F8 /* Assets.xcassets in Resources */,
+				35234A81262455EA0008C4F8 /* BalanceCell.xib in Resources */,
+				35234A86262459080008C4F8 /* FriendsCell.xib in Resources */,
 				35234A67262444810008C4F8 /* Main.storyboard in Resources */,
+				35234A97262472AD0008C4F8 /* ServicesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35234A91262463900008C4F8 /* HeaderCollectionReusableView.swift in Sources */,
 				35234A64262444810008C4F8 /* ViewController.swift in Sources */,
+				35234A85262459080008C4F8 /* FriendsCell.swift in Sources */,
+				35234A8B26245AAD0008C4F8 /* CompositionLayout.swift in Sources */,
+				35234A96262472AD0008C4F8 /* ServicesCell.swift in Sources */,
 				35234A60262444810008C4F8 /* AppDelegate.swift in Sources */,
+				35234A80262455EA0008C4F8 /* BalanceCell.swift in Sources */,
 				35234A62262444810008C4F8 /* SceneDelegate.swift in Sources */,
+				35234A7A2624550B0008C4F8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBWZGWH625;
-				INFOPLIST_FILE = SushyVeslaTZ/Info.plist;
+				INFOPLIST_FILE = "SushyVeslaTZ/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBWZGWH625;
-				INFOPLIST_FILE = SushyVeslaTZ/Info.plist;
+				INFOPLIST_FILE = "SushyVeslaTZ/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
