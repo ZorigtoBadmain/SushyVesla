@@ -12,10 +12,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let composition: CompositionLayout = CompositionLayout()
+    private var viewModel: CollectionViewModelType?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel = ViewModel()
 
         collectionConfigure()
     }
@@ -43,11 +46,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 2
+            return viewModel?.numberOfRowsBalance() ?? 0
         case 1:
-            return 5
+            return viewModel?.numberOfRowsFriends() ?? 0
         case 2:
-            return 8
+            return viewModel?.numberOfRowsService() ?? 0
         default:
             return 0
         }
@@ -58,15 +61,30 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         switch indexPath.section {
         case 0:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BalanceCell", for: indexPath) as! BalanceCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BalanceCell", for: indexPath) as? BalanceCell
             
-            return cell
+            guard let collectionCell = cell, let viewModel = viewModel else { return UICollectionViewCell() }
+            
+            let cellViewModel = viewModel.cellViewModelBalance(forIndexPath: indexPath)
+            collectionCell.viewModel = cellViewModel
+            collectionCell.configure()
+            return collectionCell
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendsCell", for: indexPath) as! FriendsCell
-            return cell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendsCell", for: indexPath) as? FriendsCell
+            guard let collectionCell = cell, let viewModel = viewModel else { return UICollectionViewCell() }
+            
+            let cellViewModel = viewModel.cellViewModelFriend(forIndexPath: indexPath)
+            collectionCell.viewModel = cellViewModel
+            collectionCell.configure()
+            return collectionCell
         case 2:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServicesCell", for: indexPath) as! ServicesCell
-            return cell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServicesCell", for: indexPath) as? ServicesCell
+            guard let collectionCell = cell, let viewModel = viewModel else { return UICollectionViewCell() }
+            
+            let cellViewModel = viewModel.cellViewModelService(forIndexPath: indexPath)
+            collectionCell.viewModel = cellViewModel
+            collectionCell.configure()
+            return collectionCell
         default:
             break
         }

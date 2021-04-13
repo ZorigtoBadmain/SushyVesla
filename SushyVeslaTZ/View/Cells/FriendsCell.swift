@@ -9,9 +9,21 @@ import UIKit
 
 class FriendsCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var imageFriend: UIImageView!
+    @IBOutlet weak var nameFriend: UILabel!
+    
+    weak var viewModel: CollectionViewCellModelFriends? {
+        willSet(viewModel) {
+            guard let viewModel = viewModel else { return }
+            nameFriend.text = viewModel.name
+            imageFriend.image = UIImage(named: viewModel.image)
+        }
     }
+    
+    func configure() {
+        self.layer.cornerRadius = 12
+        self.clipsToBounds = true
+    }
+    
 
 }

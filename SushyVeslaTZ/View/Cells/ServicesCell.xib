@@ -10,33 +10,31 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ServicesCell" id="gTV-IL-0wX" customClass="ServicesCell" customModule="SushyVeslaTZ" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="122" height="186"/>
+            <rect key="frame" x="0.0" y="0.0" width="50" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="122" height="186"/>
+                <rect key="frame" x="0.0" y="0.0" width="50" height="90"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJI-FI-xmq">
-                        <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vX3-pt-xsq">
-                                <rect key="frame" x="29" y="28" width="64" height="66"/>
+                                <rect key="frame" x="15" y="15.5" width="20" height="19"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.95294117649999999" blue="0.96470588239999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vX3-pt-xsq" firstAttribute="top" secondItem="UJI-FI-xmq" secondAttribute="top" constant="27.5" id="27p-qq-yNX"/>
-                            <constraint firstItem="vX3-pt-xsq" firstAttribute="leading" secondItem="UJI-FI-xmq" secondAttribute="leading" constant="29" id="7a1-Rb-Pfi"/>
-                            <constraint firstItem="vX3-pt-xsq" firstAttribute="centerY" secondItem="UJI-FI-xmq" secondAttribute="centerY" id="BFk-Qv-zhJ"/>
-                            <constraint firstItem="vX3-pt-xsq" firstAttribute="centerX" secondItem="UJI-FI-xmq" secondAttribute="centerX" id="Dk8-lb-A7J"/>
-                            <constraint firstAttribute="height" constant="122" id="Egu-fc-AyX"/>
-                            <constraint firstAttribute="trailing" secondItem="vX3-pt-xsq" secondAttribute="trailing" constant="29" id="Gqb-lb-5bZ"/>
-                            <constraint firstAttribute="bottom" secondItem="vX3-pt-xsq" secondAttribute="bottom" constant="27.5" id="H1F-TF-SC9"/>
+                            <constraint firstAttribute="bottom" secondItem="vX3-pt-xsq" secondAttribute="bottom" constant="15" id="BiW-zF-v2H"/>
+                            <constraint firstItem="vX3-pt-xsq" firstAttribute="top" secondItem="UJI-FI-xmq" secondAttribute="top" constant="15" id="XQF-V0-OXU"/>
+                            <constraint firstAttribute="width" secondItem="UJI-FI-xmq" secondAttribute="height" multiplier="1:1" id="ip6-dR-rAe"/>
+                            <constraint firstAttribute="trailing" secondItem="vX3-pt-xsq" secondAttribute="trailing" constant="15" id="qqE-vg-toC"/>
+                            <constraint firstItem="vX3-pt-xsq" firstAttribute="leading" secondItem="UJI-FI-xmq" secondAttribute="leading" constant="15" id="xUi-rs-wIc"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive Money" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r85-Ri-gfs">
-                        <rect key="frame" x="10" y="134" width="102" height="52"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="5" y="55" width="40" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -45,20 +43,20 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="UJI-FI-xmq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0cU-kE-k7k"/>
-                <constraint firstItem="r85-Ri-gfs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="26P-yD-bia"/>
-                <constraint firstAttribute="trailing" secondItem="r85-Ri-gfs" secondAttribute="trailing" constant="10" id="5gT-8C-IwI"/>
-                <constraint firstItem="r85-Ri-gfs" firstAttribute="top" secondItem="UJI-FI-xmq" secondAttribute="bottom" constant="12" id="Uc9-c3-ssz"/>
-                <constraint firstItem="UJI-FI-xmq" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="ZbQ-YK-8SV"/>
+                <constraint firstItem="r85-Ri-gfs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="26P-yD-bia"/>
+                <constraint firstAttribute="trailing" secondItem="r85-Ri-gfs" secondAttribute="trailing" constant="5" id="5gT-8C-IwI"/>
+                <constraint firstItem="r85-Ri-gfs" firstAttribute="top" secondItem="UJI-FI-xmq" secondAttribute="bottom" constant="5" id="Uc9-c3-ssz"/>
                 <constraint firstItem="UJI-FI-xmq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jwU-a6-tZA"/>
                 <constraint firstAttribute="bottom" secondItem="r85-Ri-gfs" secondAttribute="bottom" id="nzX-0b-KZL"/>
                 <constraint firstAttribute="trailing" secondItem="UJI-FI-xmq" secondAttribute="trailing" id="oLQ-tW-ZVb"/>
             </constraints>
-            <size key="customSize" width="122" height="186"/>
+            <size key="customSize" width="62" height="125"/>
             <connections>
                 <outlet property="imageServices" destination="vX3-pt-xsq" id="Qh0-iX-qDw"/>
                 <outlet property="labelServices" destination="r85-Ri-gfs" id="CAy-H0-tLf"/>
+                <outlet property="view" destination="UJI-FI-xmq" id="uMZ-Es-z7S"/>
             </connections>
-            <point key="canvasLocation" x="86.956521739130437" y="149.33035714285714"/>
+            <point key="canvasLocation" x="41.304347826086961" y="145.3125"/>
         </collectionViewCell>
     </objects>
     <resources>

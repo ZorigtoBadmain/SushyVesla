@@ -9,9 +9,18 @@ import UIKit
 
 class BalanceCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var balance: UILabel!
+   
+    weak var viewModel: CollectionViewCellModelBalance? {
+        willSet(viewModel) {
+            guard let viewModel = viewModel else { return }
+            balance.text = viewModel.money
+        }
+    }
+    
+    func configure() {
+        self.layer.cornerRadius = 12
+        self.clipsToBounds = true
     }
 
 }

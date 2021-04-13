@@ -50,6 +50,9 @@
                 <constraint firstItem="Pq5-sa-co9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="26" id="k0j-3W-Vc3"/>
                 <constraint firstItem="7Pg-1Q-0Cy" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="qnl-uI-CHF"/>
             </constraints>
+            <connections>
+                <outlet property="balance" destination="Pq5-sa-co9" id="96u-YJ-fXK"/>
+            </connections>
             <point key="canvasLocation" x="128.98550724637681" y="108.48214285714285"/>
         </collectionViewCell>
     </objects>

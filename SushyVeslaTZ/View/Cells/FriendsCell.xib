@@ -40,6 +40,10 @@
                 <constraint firstAttribute="bottom" secondItem="k2u-sb-din" secondAttribute="bottom" constant="24" id="dvv-UL-0Qz"/>
                 <constraint firstItem="8j6-tL-5Az" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="22" id="vQs-fi-lPH"/>
             </constraints>
+            <connections>
+                <outlet property="imageFriend" destination="8j6-tL-5Az" id="R3n-Uh-FyY"/>
+                <outlet property="nameFriend" destination="k2u-sb-din" id="Gnh-oN-GLu"/>
+            </connections>
             <point key="canvasLocation" x="34.782608695652179" y="108.48214285714285"/>
         </collectionViewCell>
     </objects>
