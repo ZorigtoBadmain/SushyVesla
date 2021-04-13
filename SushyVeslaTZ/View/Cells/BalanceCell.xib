@@ -29,13 +29,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pg-1Q-0Cy">
-                        <rect key="frame" x="252" y="35" width="48" height="45.5"/>
+                        <rect key="frame" x="252" y="34" width="48" height="48"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48" id="H7W-Ec-p2B"/>
                             <constraint firstAttribute="width" constant="48" id="gky-vr-Elt"/>
                         </constraints>
                         <color key="tintColor" red="1" green="0.67450980390000004" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <state key="normal" backgroundImage="plus.app.fill" catalog="system"/>
+                        <state key="normal" backgroundImage="Group 21"/>
                     </button>
                 </subviews>
             </view>
@@ -57,6 +57,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="Group 21" width="48" height="48"/>
     </resources>
 </document>

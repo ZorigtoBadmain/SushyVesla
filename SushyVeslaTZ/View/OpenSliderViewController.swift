@@ -1,14 +1,14 @@
 //
-//  HomeViewController.swift
+//  OpenSliderViewController.swift
 //  SushyVeslaTZ
 //
-//  Created by Зоригто Бадмаин on 12.04.2021.
+//  Created by Зоригто Бадмаин on 13.04.2021.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
+class OpenSliderViewController: UIViewController {
+
     @IBOutlet weak var collectionView: UICollectionView!
     
     let composition: CompositionLayout = CompositionLayout()
@@ -33,11 +33,19 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func openSiderbar(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "SliderViewController") as! SliderViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.constraintLeading = 200
+        vc.constraintTrailing = -200
+        vc.constraintTop = 100
+        present(vc, animated: true, completion: nil)
     }
 
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension OpenSliderViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
             return 3
