@@ -20,9 +20,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func next(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
-//        let vc = storyboard.instantiateViewController(identifier: "SliderViewController") as! SliderViewController
+        let vc = ConteinerViewController(nibName: nil, bundle: nil)
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)

@@ -7,12 +7,17 @@
 
 import UIKit
 
+protocol FoodViewControllerDelegate {
+    func toggleMenu()
+}
+
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     let composition: CompositionLayout = CompositionLayout()
     private var viewModel: CollectionViewModelType?
+    var delegate: FoodViewControllerDelegate?
     
 
     override func viewDidLoad() {
@@ -33,6 +38,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func openSiderbar(_ sender: Any) {
+        delegate?.toggleMenu()
     }
 
 }
